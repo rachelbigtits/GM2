@@ -18,9 +18,16 @@ After that done, it should look like this
 
 Then edit .github/workflows/mirror-bot.yml
 
-Change `GitHubMail`, `GitHubName`, `Repo-1-Branch` and `Repo-2-Branch` environment variable as your own
+Change `GitHubMail`, `GitHubName`, `Branch-1` and `Branch-2` environment variable as your own.
 
-![image](https://user-images.githubusercontent.com/77688759/120899828-40fd7300-c64f-11eb-9e53-f5b167f60eca.png)
+```text
+GitHubMail :- Your github email address
+GitHubName :- Your github username
+Branch-1 :- Branch name of your 1st Secret Repository
+Branch-2 :- Branch name of your 2nd Secret Repository
+```
+
+![image](https://user-images.githubusercontent.com/77688759/120900540-d4847300-c652-11eb-9031-f0dfbe6cd1a5.png)
 
 
 And That's it.
