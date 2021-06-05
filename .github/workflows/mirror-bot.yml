@@ -1,10 +1,10 @@
 name: MirrorBot Environment
 
-on:
+#on:
   push:
     branches: [ main ]
     paths-ignore: 'README.md'
-  #workflow_dispatch:
+  workflow_dispatch:
    
 env:
   # Change these values if you have forked it for your own works
@@ -13,7 +13,7 @@ env:
   Branch: "master"
 
 jobs:
-  #Job 1
+  # Job for bot-1
   bot-1:
     runs-on: ubuntu-latest
 
@@ -33,7 +33,7 @@ jobs:
 
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG }} -b ${Branch} source
+          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_1 }} -b ${Branch} source
 
       - name: Compile The Mirroring Docker Container
         run: |
@@ -59,7 +59,7 @@ jobs:
           git commit -m "Workflow : Loop"
           git push -q https://${{ secrets.GH_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main
  
- #Job 2
+ # Job for bot-2
   bot-2:
     runs-on: ubuntu-latest
 
@@ -79,7 +79,7 @@ jobs:
 
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG }} -b ${Branch} source
+          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_2 }} -b ${Branch} source
 
       - name: Compile The Mirroring Docker Container
         run: |
