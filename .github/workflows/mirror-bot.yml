@@ -14,7 +14,7 @@ env:
   Repo-2-Branch: "master"
 
 jobs:
-  # Job for bot-1
+  # 1st Job for running bot 1
   bot-1:
     runs-on: ubuntu-latest
 
@@ -49,7 +49,7 @@ jobs:
         run: |
           docker run --privileged --rm -i mirror-bot
  
- # Job for bot-2
+  # 2nd Job for running bot 2
   bot-2:
     runs-on: ubuntu-latest
 
@@ -84,7 +84,7 @@ jobs:
         run: |
           docker run --privileged --rm -i mirror-bot
           
-   # Job for loop the workflow
+  # 3rd Job for looping the workflow after job 1 & 2 completes
   looper:
     needs: [bot-1, bot-2]
     runs-on: ubuntu-latest
