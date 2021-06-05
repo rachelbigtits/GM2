@@ -1,6 +1,6 @@
 name: MirrorBot Environment
 
-on:
+#on:
   push:
     branches: [ main ]
     paths-ignore: 'README.md'
@@ -10,7 +10,8 @@ env:
   # Change these values if you have forked it for your own works
   GitHubMail: "hiteshkamble920@gmail.com"
   GitHubName: "hitesh920" 
-  Branch: "master"
+  Repo-1-Branch: "master"
+  Repo-2-Branch: "master"
 
 jobs:
   # Job for bot-1
@@ -33,7 +34,7 @@ jobs:
 
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_1 }} -b ${Branch} source
+          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_1 }} -b ${Repo-1-Branch} source
 
       - name: Compile The Mirroring Docker Container
         run: |
@@ -68,7 +69,7 @@ jobs:
 
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_2 }} -b ${Branch} source
+          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_2 }} -b ${Repo-2-Branch} source
 
       - name: Compile The Mirroring Docker Container
         run: |
