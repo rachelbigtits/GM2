@@ -85,7 +85,6 @@ jobs:
           
    # Job for loop the workflow
   looper:
-    if: always()
     needs: [bot-1, bot-2]
     runs-on: ubuntu-latest
 
