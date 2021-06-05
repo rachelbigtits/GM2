@@ -14,7 +14,7 @@ env:
 
 jobs:
   #Job 1
-  Bot 1:
+  bot-1:
     runs-on: ubuntu-latest
 
     steps:
@@ -60,7 +60,7 @@ jobs:
           git push -q https://${{ secrets.GH_TOKEN }}@github.com/${GITHUB_REPOSITORY} HEAD:main
  
  #Job 2
-  Bot 2:
+  bot-2:
     runs-on: ubuntu-latest
 
     steps:
