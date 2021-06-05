@@ -31,7 +31,7 @@ Branch-2 :- Branch name of your 2nd Secret Repository
 
 
 ## Tip:-
-If workflow stopped working or if re-run the workflow, first make sure that workflow is stopped. You can stop the workflow in "actions" tab.
+If workflow stopped working or if you want to re-run the workflow, first make sure that workflow is stopped. You can stop the workflow in "actions" tab.
 Now to start the workflow, goto looper.txt and remove the last letter/digit i.e if its 12345 then remove the last letter/digit to make it 1234 and commit the file.
 
 And That's it.
