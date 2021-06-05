@@ -18,7 +18,7 @@ After that done, it should look like this
 
 Then edit .github/workflows/mirror-bot.yml
 
-Change `GitHubMail`, `GitHubName`, `Branch-1` and `Branch-2` environment variable as your own.
+Change `GitHubMail` and `GitHubName` environment variable as your own.
 
 ```text
 GitHubMail :- Your github email address
