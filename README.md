@@ -23,11 +23,9 @@ Change `GitHubMail`, `GitHubName`, `Branch-1` and `Branch-2` environment variabl
 ```text
 GitHubMail :- Your github email address
 GitHubName :- Your github username
-Branch-1 :- Branch name of your 1st Secret Repository
-Branch-2 :- Branch name of your 2nd Secret Repository
 ```
 
-![image](https://user-images.githubusercontent.com/77688759/120900540-d4847300-c652-11eb-9031-f0dfbe6cd1a5.png)
+![image](https://user-images.githubusercontent.com/77688759/120901023-e4ea1d00-c655-11eb-8fa9-ccb7429b64df.png)
 
 
 ## Tip:-
