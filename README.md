@@ -11,15 +11,22 @@ First setup everything then push to your main private Repository
 Fork this Repo,
 Setup secrets in settings --> Secrets
 
-```text
-GH_TOKEN :- Your github personal access token, from https://github.com/settings/tokens
-MIRROR_REPOSLUG_1 :- Your 1st Secret Repository, as in "<username>/<reponame>"
-MIRROR_REPOSLUG_2 :- Your 2nd Secret Repository, as in "<username>/<reponame>"
-```
+`GH_TOKEN` :- Your github personal access token, from https://github.com/settings/tokens
+
+`MIRROR_REPOSLUG_1` :- Your 1st Secret Repository, as in `<username>/<reponame>` for eg `ghost/mirror-bot`
+
+`MIRROR_REPOSLUG_2` :- Your 2nd Secret Repository, as in "<username>/<reponame>"
+
 After that done, it should look like this
 ![image](https://user-images.githubusercontent.com/77688759/120899676-88cfca80-c64e-11eb-9aef-b76c94f21227.png)
 
 Then edit .github/workflows/mirror-bot.yml
+
+And remove "#" from line no 3
+
+
+![image](https://user-images.githubusercontent.com/77688759/131170352-25aa1f1d-099a-47bd-9fd0-a25d561af2b3.png)
+
 
 Change `GitHubMail` and `GitHubName` environment variable as your own.
 
