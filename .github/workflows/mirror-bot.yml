@@ -32,7 +32,7 @@ jobs:
 
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_1 }} source
+          git clone https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_1 }} source
 
       - name: Compile The Mirroring Docker Container
         run: |
@@ -67,7 +67,7 @@ jobs:
 
       - name: Clone The Secret Mirror Repository
         run: |
-          git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_2 }} source
+          git clone https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.MIRROR_REPOSLUG_2 }} source
 
       - name: Compile The Mirroring Docker Container
         run: |
