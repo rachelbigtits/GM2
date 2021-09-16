@@ -22,11 +22,6 @@ After that done, it should look like this
 
 Then edit .github/workflows/mirror-bot.yml
 
-And remove "#" from line no 3
-
-
-![image](https://user-images.githubusercontent.com/77688759/131170352-25aa1f1d-099a-47bd-9fd0-a25d561af2b3.png)
-
 
 Change `GitHubMail` and `GitHubName` environment variable as your own.
 
