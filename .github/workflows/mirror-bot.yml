@@ -17,10 +17,10 @@ jobs:
 
       - name: Set Git Configs & Secrets
         run: |
-          git config --global user.email ${GitHubMail}
-          git config --global user.name ${GitHubName}
+          git config --global user.email ${secrets.GitHubMail}
+          git config --global user.name ${secrets.GitHubName}
           git config --global credential.helper store
-          echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+          echo "https://${secrets.GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
 
       # Cleanup The Actions Workspace Using Custom Composite Run Actions
       - uses: rokibhasansagar/slimhub_actions@main
@@ -52,10 +52,10 @@ jobs:
 
       - name: Set Git Configs & Secrets
         run: |
-          git config --global user.email ${GitHubMail}
-          git config --global user.name ${GitHubName}
+          git config --global user.email ${secrets.GitHubMail}
+          git config --global user.name ${secrets.GitHubName}
           git config --global credential.helper store
-          echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+          echo "https://${secrets.GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
 
       # Cleanup The Actions Workspace Using Custom Composite Run Actions
       - uses: rokibhasansagar/slimhub_actions@main
@@ -87,10 +87,10 @@ jobs:
         uses: actions/checkout@main
       - name: Set Git Configs & Secrets
         run: |
-          git config --global user.email ${GitHubMail}
-          git config --global user.name ${GitHubName}
+          git config --global user.email ${secrets.GitHubMail}
+          git config --global user.name ${secrets.GitHubName}
           git config --global credential.helper store
-          echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+          echo "https://${secrets.GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
           
       - name: Loop Workflow
         run: |
