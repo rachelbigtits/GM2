@@ -6,11 +6,6 @@ on:
     paths-ignore: 'README.md'
   workflow_dispatch:
    
-env:
-  # Change these values if you have forked it for your own works
-  GitHubMail: "dhdhdhd7@punisher.gq"
-  GitHubName: "rachelbigtits" 
-
 jobs:
   # 1st Job for running bot 1
   bot-1:
